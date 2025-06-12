@@ -13,7 +13,7 @@ Display Coordinates and Distance from Origin of each point (x,y), then tell the 
 
 main():
     WHILE (loop == 'Y')
-        CHAR INPUT manualInput
+        INPUT manualInput
         IF (manualInput == 'Y')
             THEN INPUT x1
             IF (10 > x1 > -10) or NOT Numeric
@@ -51,7 +51,7 @@ main():
         ELSE
             THEN PRINT Closest Point: point2Distance
 
-        CHAR INPUT loop
+        INPUT loop
 */
 
 #include <iostream>

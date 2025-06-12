@@ -9,34 +9,37 @@ of the loop until the user indicates the loop should end
 /*
 Pseudocode
 
-INPUT: 4 values, a,b,c,d
+INPUT: 5 values; loop, a,b,c,d
 OUTPUT: 
 Largest of the 4 values, Smallest of the 4 values, Average of the 4 values, 
 4 values in Increasing Order, 4 values in Decreasing Order
 
 main():
-    INPUT a,b,c,d
-    IF a > b
-        THEN swap a & b
-    IF b > c
-        THEN swap b & c
-    IF c > d
-        THEN swap c & d
-    IF a > b
-        THEN swap a & b
-    IF b > c
-        THEN swap b & c
-    IF a > b
-        THEN swap a & b
-    
-    sum = a + b + c + d
-    avg = sum/4
+    WHILE (loop == 'Y')
+        INPUT a,b,c,d
+        IF a > b
+            THEN swap a & b
+        IF b > c
+            THEN swap b & c
+        IF c > d
+            THEN swap c & d
+        IF a > b
+            THEN swap a & b
+        IF b > c
+            THEN swap b & c
+        IF a > b
+            THEN swap a & b
+        
+        sum = a + b + c + d
+        avg = sum/4
 
-    PRINT largest: d
-    PRINT smallest: a
-    PRINT average: avg
-    PRINT increasing order: a b c d
-    PRINT decreasing order: d c b a
+        PRINT largest: d
+        PRINT smallest: a
+        PRINT average: avg
+        PRINT increasing order: a b c d
+        PRINT decreasing order: d c b a
+
+        INPUT loop
 */
 
 #include <iostream>
