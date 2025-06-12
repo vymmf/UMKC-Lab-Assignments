@@ -78,11 +78,11 @@ int main()
             cout << "Please enter the coordinates to be added (Format: x1, y1, x2, y2):" << endl;
             while (true)
             {
-                if (cin >> x1 >> y1 >> x2 >> y2)
+                if (cin >> x1 >> y1 >> x2 >> y2) // Checks if the user's input are integers
                 {
                     if ((10 >= x1) && (x1 >= -10) && (10 >= y1) && (y1 >= -10) && (10 >= x2) && (x2 >= -10) && (10 >= y2) && (y2 >= -10))
                     {
-                        break;
+                        break; // Stops the loop once the value is valid (It is an integer and is between 10 and -10)
                     }
                     else
                     {
@@ -92,7 +92,7 @@ int main()
                 else
                 {
                     cout << "Invalid Input, Try Again. (Must be Numeric)" << endl;
-                    cin.clear(); // Resets the error state of cin, if this isn't set in place an infinite loop will occur
+                    cin.clear(); // Resets the error state of the user's input, if this isn't set in place an infinite loop will occur
                     cin.ignore(numeric_limits<streamsize>::max(), '\n'); // Erases the previous input of the user, if this isn't set in place an infinite loop will occur
                 }
             }
