@@ -1,7 +1,11 @@
 // Name: Vincent Yang
 // Program 2 - Distance
 /* Purpose:
-
+Get 4 integers which will be the coordinates x1, y1, x2, y2,
+based on either User Manual Input or Random Integer Generation,
+then display the coordinates and distances each point
+and which point is closest to the origin.
+This sequence of actions will loop until the user indicates the loop should end.
 */
 
 /*
