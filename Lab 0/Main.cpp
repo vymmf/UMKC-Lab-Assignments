@@ -47,8 +47,8 @@ using namespace std;
 
 int main()
 {
-    int number1, number2, number3, number4;
-    int storedNum;
+    int number1, number2, number3, number4; // I want number1 to be the smallest number and number 4 to be the largest number; order will be from smallest to largest
+    int storedNum; // Used to store the larger number when comparing 2 numbers
     int sum = 0;
     char loop = 'Y';
 
@@ -105,7 +105,7 @@ int main()
         cout << "Smallest of the four numbers is " << number1 << endl;
 
         sum = number1 + number2 + number3 + number4;
-        float avg = sum/static_cast<double>(4);
+        float avg = sum/static_cast<double>(4); // Converts the value type of 4 into a double
         cout << "Average of the four numbers is " << avg << endl;
 
         cout << "Numbers in Increasing Order is " << number1 << ' ' << number2 << ' ' << number3 << ' ' << number4 << endl;

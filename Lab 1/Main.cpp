@@ -92,8 +92,8 @@ int main()
                 else
                 {
                     cout << "Invalid Input, Try Again. (Must be Numeric)" << endl;
-                    cin.clear();
-                    cin.ignore(numeric_limits<streamsize>::max(), '\n');
+                    cin.clear(); // Resets the error state of cin, if this isn't set in place an infinite loop will occur
+                    cin.ignore(numeric_limits<streamsize>::max(), '\n'); // Erases the previous input of the user, if this isn't set in place an infinite loop will occur
                 }
             }
             //     if (cin >> x1)
@@ -194,7 +194,7 @@ int main()
         // cout << "x2: " << x2 << endl;
         // cout << "y2: " << y2 << endl;
 
-        double point1Distance = pow(pow(x1, 2) + pow(y1, 2), 0.5);
+        double point1Distance = pow(pow(x1, 2) + pow(y1, 2), 0.5); // Pythagorean Theorem: a^2 + b^2 = c^2; gets a^2 and b^2 then gets the square root to get c, which will be the hypotenuse/distance
         double point2Distance = pow(pow(x2, 2) + pow(y2, 2), 0.5);
 
         cout << "\nPoint 1: (" << x1 << ',' << y1 << ")\n" << "Distance: " << point1Distance << endl << endl;
