@@ -1,7 +1,7 @@
 // Name: Vincent Yang
 // Program 1 - Numbers
 /* Purpose:
-Continuiously display the largest, smallest, average, increasing order, 
+Continuiously display the largest, smallest, average, increasing order, and
 decreasing order of the 4 numbers inputted by the user for each iteration 
 of the loop until the user indicates the loop should end
 */
