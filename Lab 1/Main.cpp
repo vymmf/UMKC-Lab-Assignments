@@ -11,7 +11,7 @@ This sequence of actions will loop until the user indicates the loop should end.
 /*
 Pseudocode
 
-INPUT: 6 values; loop, manualInput, x1, y1, x2, y2
+INPUT: 6 values (4 optional); loop, manualInput; (optional values) x1, y1, x2, y2
 OUTPUT: 
 Display Coordinates and Distance from Origin of each point (x,y), then tell the user which point is closer to the Origin.
 
@@ -20,19 +20,19 @@ main():
         INPUT manualInput
         IF (manualInput == 'Y')
             THEN INPUT x1
-            IF (10 > x1 > -10) or NOT Numeric
+            IF (x1 > 10 OR x1 < -10) OR NOT Numeric
                 THEN WHILE (10 > x1 > -10) or NOT Numeric
                     INPUT x1
             INPUT y1
-            IF (10 > y1 > -10) or NOT Numeric
+            IF (y1 > 10 OR y1 < -10) OR NOT Numeric
                 THEN WHILE (10 > y1 > -10) or NOT Numeric
                     INPUT y1
             INPUT x2
-            IF (10 > x2 > -10) or NOT Numeric
+            IF (x2 > 10 OR x2 < -10) OR NOT Numeric
                 THEN WHILE (10 > x2 > -10) or NOT Numeric
                     INPUT x2
             INPUT y2
-            IF (10 > y2 > -10) or NOT Numeric
+            IF (y2 > 10 OR y2 < -10) OR NOT Numeric
                 THEN WHILE (10 > y2 > -10) or NOT Numeric
                     INPUT y2
         ELSE
