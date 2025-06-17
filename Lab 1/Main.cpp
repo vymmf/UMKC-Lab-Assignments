@@ -94,7 +94,7 @@ int main()
                 {
                     cout << "Invalid Input, Try Again. (Must be Numeric)" << endl;
                     cin.clear(); // Resets the error state of the user's input, if this isn't set in place an infinite loop will occur
-                    cin.ignore(numeric_limits<streamsize>::max(), '\n'); // Erases the previous input of the user, if this isn't set in place an infinite loop will occur
+                    cin.ignore(numeric_limits<streamsize>::max(), '\n'); // Erases the previous input of the user, if this isn't set in place an infinite loop will occur; the parameters are the amount of characters that need to be ignored (in this case the highest number possible) what character to end on (in this case the end line break statement)
                 }
             }
             //     if (cin >> x1)
