@@ -80,9 +80,10 @@ int main()
             {
                 if (cin >> x1 >> y1 >> x2 >> y2) // Checks if the user's input are integers
                 {
-                    if ((10 >= x1) && (x1 >= -10) && (10 >= y1) && (y1 >= -10) && (10 >= x2) && (x2 >= -10) && (10 >= y2) && (y2 >= -10))
+                    if ((10 >= x1 && x1 >= -10) && (10 >= y1 && y1 >= -10) && (10 >= x2 && x2 >= -10) && (10 >= y2 && y2 >= -10)) // Checks if Integer is valid between the range of 10 to -10 for each x and y
+                    // if ((-10 <= x1 <= 10) && (-10 <= y1 <= 10) && (-10 <= x2 <= 10) && (-10 <= y2 <= 10)) // Checks if Integer is valid between the range of 10 to -10 for each x and y
                     {
-                        break; // Stops the loop once the value is valid (It is an integer and is between 10 and -10)
+                        break; // Stops the loop once the value is valid (Once the value is an integer and is between 10 and -10)
                     }
                     else
                     {
@@ -183,7 +184,7 @@ int main()
         }
         else
         {
-            x1 = rand() % 21 - 10;
+            x1 = rand() % 21 - 10; // % 21 allows numbers up to 20 because that is the max amount for a remainder, then the -10 sets the range from (0 to 20) to (-10 to 10)
             y1 = rand() % 21 - 10;
             x2 = rand() % 21 - 10;
             y2 = rand() % 21 - 10;
