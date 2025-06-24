@@ -4,10 +4,22 @@ using namespace std;
 
 double calculateShipping(int numPounds) // Calculates shipping costs based on branching
 {
-    if (numPounds <= 10) return 8.25;
-    else if (numPounds <= 20) return 12.75;
-    else if (numPounds <= 50) return 15.25;
-    else return 19.75;
+    if (numPounds <= 10) 
+    {
+        return 8.25;
+    }
+    else if (numPounds <= 20) 
+    {
+        return 12.75;
+    }
+    else if (numPounds <= 50) 
+    {
+        return 15.25;
+    }
+    else 
+    {
+        return 19.75;
+    }
 }
 
 void printInventory(int largeInv, int mediumInv, int smallInv)
