@@ -34,7 +34,7 @@ void orderInventory(int& largeInv, int& mediumInv, int& smallInv)
         }
         else
         {
-            cout << "\nWARNING: " << amount << " is not an integer. Command ignored." << endl;
+            cout << "\nWARNING: Input is not a valid integer. Command ignored." << endl;
             cin.clear();
             cin.ignore(numeric_limits<streamsize>::max(), '\n');
         }
@@ -95,8 +95,8 @@ void fillOrder(int& largeInv, int& mediumInv, int& smallInv, float largePrice, f
     double taxTotal;
     double shipping;
 
-    while (true)
-    {
+    // while (true)
+    // {
         cout << "Please enter the number of pounds of chocolate you would like to order: ";
         if ((cin >> numPounds) && (numPounds > 0))
         {
@@ -143,7 +143,7 @@ void fillOrder(int& largeInv, int& mediumInv, int& smallInv, float largePrice, f
                 cout << "Total Cost: " << setw(25) << totalCost << endl << endl << endl;
 
                 orderNum++;
-                break;
+                // break;
             }
             else
             {
@@ -152,11 +152,11 @@ void fillOrder(int& largeInv, int& mediumInv, int& smallInv, float largePrice, f
         }
         else
         {
-            cout << "\nWARNING: " << numPounds << " is not an integer. Command ignored." << endl;
+            cout << "\nWARNING: Input is not a valid integer. Command ignored." << endl;
             cin.clear();
             cin.ignore(numeric_limits<streamsize>::max(), '\n');
         }
-    }
+    // }
 }
 
 int command(char& choice, int& largeInv, int& mediumInv, int& smallInv, float largePrice, float mediumPrice, float smallPrice, int& orderNum) // I created this function to avoid too much clutter in the main function
