@@ -31,7 +31,7 @@ void printInventory(int largeInv, int mediumInv, int smallInv)
 void orderInventory(int& largeInv, int& mediumInv, int& smallInv)
 {
     int amount;
-    int invOfType = 0;
+    int invOfType;
     char type;
     string typeAsString;
 
@@ -40,13 +40,13 @@ void orderInventory(int& largeInv, int& mediumInv, int& smallInv)
     while (true)
     {
         cout << "Enter the number of bars needed: ";
-        if (cin >> amount)
+        if ((cin >> amount) && (amount > 0))
         {
             break;
         }
         else
         {
-            cout << "\nWARNING: Input is not a valid integer. Command ignored." << endl;
+            cout << "\nWARNING: Input is not a valid positive integer. Command ignored." << endl;
             cin.clear();
             cin.ignore(numeric_limits<streamsize>::max(), '\n');
         }
@@ -61,26 +61,26 @@ void orderInventory(int& largeInv, int& mediumInv, int& smallInv)
         {
             typeAsString = "large";
             largeInv += amount;
-            invOfType += largeInv;
+            invOfType = largeInv;
             break;
         }
         else if (toupper(type) == 'M')
         {
             typeAsString = "medium";
             mediumInv += amount;
-            invOfType += mediumInv;
+            invOfType = mediumInv;
             break;
         }
         else if (toupper(type) == 'S')
         {
             typeAsString = "small";
             smallInv += amount;
-            invOfType += smallInv;
+            invOfType = smallInv;
             break;
         }
         else
         {
-        cout << "\nWARNING: " << type << " is an invalid type. Command ignored." << endl;
+            cout << "\nWARNING: " << type << " is an invalid type. Command ignored." << endl;
         }
     }
     // else
@@ -164,7 +164,7 @@ void fillOrder(int& largeInv, int& mediumInv, int& smallInv, float largePrice, f
         }
         else
         {
-            cout << "\nWARNING: Input is not a valid integer. Command ignored." << endl;
+            cout << "\nWARNING: Input is not a valid positive integer. Command ignored." << endl;
             cin.clear();
             cin.ignore(numeric_limits<streamsize>::max(), '\n');
         }
