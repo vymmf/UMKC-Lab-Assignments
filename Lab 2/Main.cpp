@@ -1,3 +1,11 @@
+// Name: Vincent Yang
+// Program 3 - Chocolate Factory
+/* Purpose:
+Keeps track of the chocolate bar inventory and allows the user to create orders efficiently.
+Also creates a printout of each order and includes the tax and shipping costs and the ability
+to order more chocolate.
+*/
+
 #include <iostream>
 #include <iomanip>
 using namespace std;
