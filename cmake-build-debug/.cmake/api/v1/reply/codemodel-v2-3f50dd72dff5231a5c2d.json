@@ -1,0 +1,195 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"childIndexes" : 
+					[
+						1,
+						2,
+						3,
+						4
+					],
+					"jsonFile" : "directory-.-Debug-f5ebdc15457944623624.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.25"
+					},
+					"projectIndex" : 0,
+					"source" : "."
+				},
+				{
+					"build" : "Lab 0",
+					"jsonFile" : "directory-Lab 0-Debug-470d16dc911f56147bfa.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.25"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 1,
+					"source" : "Lab 0",
+					"targetIndexes" : 
+					[
+						0
+					]
+				},
+				{
+					"build" : "Lab 1",
+					"jsonFile" : "directory-Lab 1-Debug-b34ab0dec761a32e4422.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.25"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 2,
+					"source" : "Lab 1",
+					"targetIndexes" : 
+					[
+						1
+					]
+				},
+				{
+					"build" : "Lab 2",
+					"jsonFile" : "directory-Lab 2-Debug-999ec9bd03e6c921dbed.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.25"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 3,
+					"source" : "Lab 2",
+					"targetIndexes" : 
+					[
+						2
+					]
+				},
+				{
+					"build" : "Lab 3",
+					"jsonFile" : "directory-Lab 3-Debug-f29369648be55cf4b9bd.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.25"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 4,
+					"source" : "Lab 3",
+					"targetIndexes" : 
+					[
+						3
+					]
+				}
+			],
+			"name" : "Debug",
+			"projects" : 
+			[
+				{
+					"childIndexes" : 
+					[
+						1,
+						2,
+						3,
+						4
+					],
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "UMKC-Lab-Assignments"
+				},
+				{
+					"directoryIndexes" : 
+					[
+						1
+					],
+					"name" : "Lab 0",
+					"parentIndex" : 0,
+					"targetIndexes" : 
+					[
+						0
+					]
+				},
+				{
+					"directoryIndexes" : 
+					[
+						2
+					],
+					"name" : "Lab 1",
+					"parentIndex" : 0,
+					"targetIndexes" : 
+					[
+						1
+					]
+				},
+				{
+					"directoryIndexes" : 
+					[
+						3
+					],
+					"name" : "Lab 2",
+					"parentIndex" : 0,
+					"targetIndexes" : 
+					[
+						2
+					]
+				},
+				{
+					"directoryIndexes" : 
+					[
+						4
+					],
+					"name" : "Lab 3",
+					"parentIndex" : 0,
+					"targetIndexes" : 
+					[
+						3
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 1,
+					"id" : "Lab0::@6977fcffdf91504bfe00",
+					"jsonFile" : "target-Lab0-Debug-caa84e1220e58b9dd9f3.json",
+					"name" : "Lab0",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 2,
+					"id" : "Lab1::@afff14fd1f3f7dcfd003",
+					"jsonFile" : "target-Lab1-Debug-7a032bc2b1167062a07a.json",
+					"name" : "Lab1",
+					"projectIndex" : 2
+				},
+				{
+					"directoryIndex" : 3,
+					"id" : "Lab2::@7e52120c1b2ee8a17e09",
+					"jsonFile" : "target-Lab2-Debug-3b7f7868b8c510aaebae.json",
+					"name" : "Lab2",
+					"projectIndex" : 3
+				},
+				{
+					"directoryIndex" : 4,
+					"id" : "Lab3::@26ea3748468dff1f59f6",
+					"jsonFile" : "target-Lab3-Debug-29cdd115b11bb9038bfd.json",
+					"name" : "Lab3",
+					"projectIndex" : 4
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "/Users/mylaptop/Documents/GitHub/UMKC-Lab-Assignments/cmake-build-debug",
+		"source" : "/Users/mylaptop/Documents/GitHub/UMKC-Lab-Assignments"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 7
+	}
+}

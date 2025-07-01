@@ -7,6 +7,6 @@
 
 using namespace std;
 
-int playBlackjack();
-int playCraps();
-int playHangman();
+void playBlackjack();
+void playCraps();
+void playHangman();
