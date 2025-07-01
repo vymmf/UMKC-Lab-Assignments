@@ -10,6 +10,11 @@
 #include <random>
 using namespace std;
 
+/*
+ * Source: https://umsystem.instructure.com/files/folder/courses_312246/Labs/Games?preview=35163911
+ * Games.cpp file from CS201 Lab Course Files
+ */
+
 // --- Blackjack Game Functions ---
 // Card structure
 struct Card {

@@ -9,6 +9,11 @@
 #include <numeric>
 using namespace std;
 
+/*
+ * Source: https://umsystem.instructure.com/files/folder/courses_312246/Labs/Games?preview=35163911
+ * Games.cpp file from CS201 Lab Course Files
+ */
+
 // --- Hangman Game Functions ---
 // Function to display the Hangman gallows based on incorrect guesses
 void displayHangmanGallows(int incorrectGuesses) {
