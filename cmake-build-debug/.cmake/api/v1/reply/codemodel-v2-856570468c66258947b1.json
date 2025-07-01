@@ -11,7 +11,8 @@
 						1,
 						2,
 						3,
-						4
+						4,
+						5
 					],
 					"jsonFile" : "directory-.-Debug-f5ebdc15457944623624.json",
 					"minimumCMakeVersion" : 
@@ -80,6 +81,21 @@
 					[
 						3
 					]
+				},
+				{
+					"build" : "Midterm",
+					"jsonFile" : "directory-Midterm-Debug-6c6d7d208884c453086d.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.25"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 5,
+					"source" : "Midterm",
+					"targetIndexes" : 
+					[
+						4
+					]
 				}
 			],
 			"name" : "Debug",
@@ -91,7 +107,8 @@
 						1,
 						2,
 						3,
-						4
+						4,
+						5
 					],
 					"directoryIndexes" : 
 					[
@@ -146,6 +163,18 @@
 					[
 						3
 					]
+				},
+				{
+					"directoryIndexes" : 
+					[
+						5
+					],
+					"name" : "Midterm",
+					"parentIndex" : 0,
+					"targetIndexes" : 
+					[
+						4
+					]
 				}
 			],
 			"targets" : 
@@ -177,6 +206,13 @@
 					"jsonFile" : "target-Lab3-Debug-29cdd115b11bb9038bfd.json",
 					"name" : "Lab3",
 					"projectIndex" : 4
+				},
+				{
+					"directoryIndex" : 5,
+					"id" : "Midterm::@ee572f93845a9ed1fb27",
+					"jsonFile" : "target-Midterm-Debug-c52144fc32b1805ed7af.json",
+					"name" : "Midterm",
+					"projectIndex" : 5
 				}
 			]
 		}

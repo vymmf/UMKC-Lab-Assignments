@@ -707,7 +707,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "5"
+			"value" : "6"
 		},
 		{
 			"name" : "CMAKE_OBJCOPY",
@@ -1300,6 +1300,42 @@
 			],
 			"type" : "STATIC",
 			"value" : "/Users/mylaptop/Documents/GitHub/UMKC-Lab-Assignments"
+		},
+		{
+			"name" : "Midterm_BINARY_DIR",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : "Value Computed by CMake"
+				}
+			],
+			"type" : "STATIC",
+			"value" : "/Users/mylaptop/Documents/GitHub/UMKC-Lab-Assignments/cmake-build-debug/Midterm"
+		},
+		{
+			"name" : "Midterm_IS_TOP_LEVEL",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : "Value Computed by CMake"
+				}
+			],
+			"type" : "STATIC",
+			"value" : "OFF"
+		},
+		{
+			"name" : "Midterm_SOURCE_DIR",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : "Value Computed by CMake"
+				}
+			],
+			"type" : "STATIC",
+			"value" : "/Users/mylaptop/Documents/GitHub/UMKC-Lab-Assignments/Midterm"
 		},
 		{
 			"name" : "UMKC-Lab-Assignments_BINARY_DIR",

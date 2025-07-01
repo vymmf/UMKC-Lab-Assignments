@@ -87,14 +87,14 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/mylaptop/Documents/GitHub/UMKC-Lab-Assignments/cmake-build-debug/CMakeFiles /Users/mylaptop/Documents/GitHub/UMKC-Lab-Assignments/cmake-build-debug//CMakeFiles/progress.marks
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 all
+	cd /Users/mylaptop/Documents/GitHub/UMKC-Lab-Assignments/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_progress_start /Users/mylaptop/Documents/GitHub/UMKC-Lab-Assignments/cmake-build-debug/CMakeFiles /Users/mylaptop/Documents/GitHub/UMKC-Lab-Assignments/cmake-build-debug/Midterm//CMakeFiles/progress.marks
+	cd /Users/mylaptop/Documents/GitHub/UMKC-Lab-Assignments/cmake-build-debug && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Midterm/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /Users/mylaptop/Documents/GitHub/UMKC-Lab-Assignments/cmake-build-debug/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 clean
+	cd /Users/mylaptop/Documents/GitHub/UMKC-Lab-Assignments/cmake-build-debug && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Midterm/clean
 .PHONY : clean
 
 # The main clean target
@@ -103,83 +103,56 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 preinstall
+	cd /Users/mylaptop/Documents/GitHub/UMKC-Lab-Assignments/cmake-build-debug && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Midterm/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 preinstall
+	cd /Users/mylaptop/Documents/GitHub/UMKC-Lab-Assignments/cmake-build-debug && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Midterm/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	$(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /Users/mylaptop/Documents/GitHub/UMKC-Lab-Assignments/cmake-build-debug && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
-#=============================================================================
-# Target rules for targets named Lab0
+# Convenience name for target.
+Midterm/CMakeFiles/Midterm.dir/rule:
+	cd /Users/mylaptop/Documents/GitHub/UMKC-Lab-Assignments/cmake-build-debug && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Midterm/CMakeFiles/Midterm.dir/rule
+.PHONY : Midterm/CMakeFiles/Midterm.dir/rule
 
-# Build rule for target.
-Lab0: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Lab0
-.PHONY : Lab0
-
-# fast build rule for target.
-Lab0/fast:
-	$(MAKE) $(MAKESILENT) -f "Lab 0/CMakeFiles/Lab0.dir/build.make" "Lab 0/CMakeFiles/Lab0.dir/build"
-.PHONY : Lab0/fast
-
-#=============================================================================
-# Target rules for targets named Lab1
-
-# Build rule for target.
-Lab1: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Lab1
-.PHONY : Lab1
-
-# fast build rule for target.
-Lab1/fast:
-	$(MAKE) $(MAKESILENT) -f "Lab 1/CMakeFiles/Lab1.dir/build.make" "Lab 1/CMakeFiles/Lab1.dir/build"
-.PHONY : Lab1/fast
-
-#=============================================================================
-# Target rules for targets named Lab2
-
-# Build rule for target.
-Lab2: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Lab2
-.PHONY : Lab2
-
-# fast build rule for target.
-Lab2/fast:
-	$(MAKE) $(MAKESILENT) -f "Lab 2/CMakeFiles/Lab2.dir/build.make" "Lab 2/CMakeFiles/Lab2.dir/build"
-.PHONY : Lab2/fast
-
-#=============================================================================
-# Target rules for targets named Lab3
-
-# Build rule for target.
-Lab3: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Lab3
-.PHONY : Lab3
-
-# fast build rule for target.
-Lab3/fast:
-	$(MAKE) $(MAKESILENT) -f "Lab 3/CMakeFiles/Lab3.dir/build.make" "Lab 3/CMakeFiles/Lab3.dir/build"
-.PHONY : Lab3/fast
-
-#=============================================================================
-# Target rules for targets named Midterm
-
-# Build rule for target.
-Midterm: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Midterm
+# Convenience name for target.
+Midterm: Midterm/CMakeFiles/Midterm.dir/rule
 .PHONY : Midterm
 
 # fast build rule for target.
 Midterm/fast:
-	$(MAKE) $(MAKESILENT) -f Midterm/CMakeFiles/Midterm.dir/build.make Midterm/CMakeFiles/Midterm.dir/build
+	cd /Users/mylaptop/Documents/GitHub/UMKC-Lab-Assignments/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Midterm/CMakeFiles/Midterm.dir/build.make Midterm/CMakeFiles/Midterm.dir/build
 .PHONY : Midterm/fast
+
+Main.o: Main.cpp.o
+.PHONY : Main.o
+
+# target to build an object file
+Main.cpp.o:
+	cd /Users/mylaptop/Documents/GitHub/UMKC-Lab-Assignments/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Midterm/CMakeFiles/Midterm.dir/build.make Midterm/CMakeFiles/Midterm.dir/Main.cpp.o
+.PHONY : Main.cpp.o
+
+Main.i: Main.cpp.i
+.PHONY : Main.i
+
+# target to preprocess a source file
+Main.cpp.i:
+	cd /Users/mylaptop/Documents/GitHub/UMKC-Lab-Assignments/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Midterm/CMakeFiles/Midterm.dir/build.make Midterm/CMakeFiles/Midterm.dir/Main.cpp.i
+.PHONY : Main.cpp.i
+
+Main.s: Main.cpp.s
+.PHONY : Main.s
+
+# target to generate assembly for a file
+Main.cpp.s:
+	cd /Users/mylaptop/Documents/GitHub/UMKC-Lab-Assignments/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Midterm/CMakeFiles/Midterm.dir/build.make Midterm/CMakeFiles/Midterm.dir/Main.cpp.s
+.PHONY : Main.cpp.s
 
 # Help Target
 help:
@@ -189,11 +162,10 @@ help:
 	@echo "... depend"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
-	@echo "... Lab0"
-	@echo "... Lab1"
-	@echo "... Lab2"
-	@echo "... Lab3"
 	@echo "... Midterm"
+	@echo "... Main.o"
+	@echo "... Main.i"
+	@echo "... Main.s"
 .PHONY : help
 
 
@@ -205,6 +177,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	$(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /Users/mylaptop/Documents/GitHub/UMKC-Lab-Assignments/cmake-build-debug && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

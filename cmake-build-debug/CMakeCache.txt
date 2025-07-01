@@ -259,6 +259,15 @@ Lab0_IS_TOP_LEVEL:STATIC=ON
 Lab0_SOURCE_DIR:STATIC=/Users/mylaptop/Documents/GitHub/UMKC-Lab-Assignments
 
 //Value Computed by CMake
+Midterm_BINARY_DIR:STATIC=/Users/mylaptop/Documents/GitHub/UMKC-Lab-Assignments/cmake-build-debug/Midterm
+
+//Value Computed by CMake
+Midterm_IS_TOP_LEVEL:STATIC=OFF
+
+//Value Computed by CMake
+Midterm_SOURCE_DIR:STATIC=/Users/mylaptop/Documents/GitHub/UMKC-Lab-Assignments/Midterm
+
+//Value Computed by CMake
 UMKC-Lab-Assignments_BINARY_DIR:STATIC=/Users/mylaptop/Documents/GitHub/UMKC-Lab-Assignments/cmake-build-debug
 
 //Value Computed by CMake
@@ -362,7 +371,7 @@ CMAKE_MODULE_LINKER_FLAGS_RELWITHDEBINFO-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_NM
 CMAKE_NM-ADVANCED:INTERNAL=1
 //number of local generators
-CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=5
+CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=6
 //ADVANCED property for variable: CMAKE_OBJCOPY
 CMAKE_OBJCOPY-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_OBJDUMP
