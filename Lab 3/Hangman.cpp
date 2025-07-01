@@ -91,4 +91,6 @@ void playHangman() {
         cout << "Better luck next time!\n";
     }
     cout << "Thanks for playing Hangman!\n";
+
+    main();
 }
