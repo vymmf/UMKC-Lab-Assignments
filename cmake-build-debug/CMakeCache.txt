@@ -250,6 +250,15 @@ Lab 3_IS_TOP_LEVEL:STATIC=OFF
 Lab 3_SOURCE_DIR:STATIC=/Users/mylaptop/Documents/GitHub/UMKC-Lab-Assignments/Lab 3
 
 //Value Computed by CMake
+Lab 4_BINARY_DIR:STATIC=/Users/mylaptop/Documents/GitHub/UMKC-Lab-Assignments/cmake-build-debug/Lab 4
+
+//Value Computed by CMake
+Lab 4_IS_TOP_LEVEL:STATIC=OFF
+
+//Value Computed by CMake
+Lab 4_SOURCE_DIR:STATIC=/Users/mylaptop/Documents/GitHub/UMKC-Lab-Assignments/Lab 4
+
+//Value Computed by CMake
 Lab0_BINARY_DIR:STATIC=/Users/mylaptop/Documents/GitHub/UMKC-Lab-Assignments/cmake-build-debug
 
 //Value Computed by CMake
@@ -371,7 +380,7 @@ CMAKE_MODULE_LINKER_FLAGS_RELWITHDEBINFO-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_NM
 CMAKE_NM-ADVANCED:INTERNAL=1
 //number of local generators
-CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=6
+CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=7
 //ADVANCED property for variable: CMAKE_OBJCOPY
 CMAKE_OBJCOPY-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_OBJDUMP

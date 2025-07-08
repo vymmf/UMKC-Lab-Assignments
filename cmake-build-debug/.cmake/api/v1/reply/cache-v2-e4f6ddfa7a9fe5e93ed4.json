@@ -707,7 +707,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "6"
+			"value" : "7"
 		},
 		{
 			"name" : "CMAKE_OBJCOPY",
@@ -1264,6 +1264,42 @@
 			],
 			"type" : "STATIC",
 			"value" : "/Users/mylaptop/Documents/GitHub/UMKC-Lab-Assignments/Lab 3"
+		},
+		{
+			"name" : "Lab 4_BINARY_DIR",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : "Value Computed by CMake"
+				}
+			],
+			"type" : "STATIC",
+			"value" : "/Users/mylaptop/Documents/GitHub/UMKC-Lab-Assignments/cmake-build-debug/Lab 4"
+		},
+		{
+			"name" : "Lab 4_IS_TOP_LEVEL",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : "Value Computed by CMake"
+				}
+			],
+			"type" : "STATIC",
+			"value" : "OFF"
+		},
+		{
+			"name" : "Lab 4_SOURCE_DIR",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : "Value Computed by CMake"
+				}
+			],
+			"type" : "STATIC",
+			"value" : "/Users/mylaptop/Documents/GitHub/UMKC-Lab-Assignments/Lab 4"
 		},
 		{
 			"name" : "Lab0_BINARY_DIR",

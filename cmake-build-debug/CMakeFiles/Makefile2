@@ -67,6 +67,7 @@ all: Lab\ 0/all
 all: Lab\ 1/all
 all: Lab\ 2/all
 all: Lab\ 3/all
+all: Lab\ 4/all
 all: Midterm/all
 .PHONY : all
 
@@ -75,6 +76,7 @@ codegen: Lab\ 0/codegen
 codegen: Lab\ 1/codegen
 codegen: Lab\ 2/codegen
 codegen: Lab\ 3/codegen
+codegen: Lab\ 4/codegen
 codegen: Midterm/codegen
 .PHONY : codegen
 
@@ -83,6 +85,7 @@ preinstall: Lab\ 0/preinstall
 preinstall: Lab\ 1/preinstall
 preinstall: Lab\ 2/preinstall
 preinstall: Lab\ 3/preinstall
+preinstall: Lab\ 4/preinstall
 preinstall: Midterm/preinstall
 .PHONY : preinstall
 
@@ -91,6 +94,7 @@ clean: Lab\ 0/clean
 clean: Lab\ 1/clean
 clean: Lab\ 2/clean
 clean: Lab\ 3/clean
+clean: Lab\ 4/clean
 clean: Midterm/clean
 .PHONY : clean
 
@@ -169,6 +173,25 @@ Lab\ 3/preinstall:
 # Recursive "clean" directory target.
 Lab\ 3/clean: Lab\ 3/CMakeFiles/Lab3.dir/clean
 .PHONY : Lab\ 3/clean
+
+#=============================================================================
+# Directory level rules for directory Lab\ 4
+
+# Recursive "all" directory target.
+Lab\ 4/all: Lab\ 4/CMakeFiles/Lab4.dir/all
+.PHONY : Lab\ 4/all
+
+# Recursive "codegen" directory target.
+Lab\ 4/codegen: Lab\ 4/CMakeFiles/Lab4.dir/codegen
+.PHONY : Lab\ 4/codegen
+
+# Recursive "preinstall" directory target.
+Lab\ 4/preinstall:
+.PHONY : Lab\ 4/preinstall
+
+# Recursive "clean" directory target.
+Lab\ 4/clean: Lab\ 4/CMakeFiles/Lab4.dir/clean
+.PHONY : Lab\ 4/clean
 
 #=============================================================================
 # Directory level rules for directory Midterm
@@ -318,13 +341,45 @@ Lab\ 3/CMakeFiles/Lab3.dir/clean:
 .PHONY : Lab\ 3/CMakeFiles/Lab3.dir/clean
 
 #=============================================================================
+# Target rules for target Lab 4/CMakeFiles/Lab4.dir
+
+# All Build rule for target.
+Lab\ 4/CMakeFiles/Lab4.dir/all:
+	$(MAKE) $(MAKESILENT) -f "Lab 4/CMakeFiles/Lab4.dir/build.make" "Lab 4/CMakeFiles/Lab4.dir/depend"
+	$(MAKE) $(MAKESILENT) -f "Lab 4/CMakeFiles/Lab4.dir/build.make" "Lab 4/CMakeFiles/Lab4.dir/build"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/mylaptop/Documents/GitHub/UMKC-Lab-Assignments/cmake-build-debug/CMakeFiles --progress-num=12,13 "Built target Lab4"
+.PHONY : Lab\ 4/CMakeFiles/Lab4.dir/all
+
+# Build rule for subdir invocation for target.
+Lab\ 4/CMakeFiles/Lab4.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/mylaptop/Documents/GitHub/UMKC-Lab-Assignments/cmake-build-debug/CMakeFiles 2
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 "Lab 4/CMakeFiles/Lab4.dir/all"
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/mylaptop/Documents/GitHub/UMKC-Lab-Assignments/cmake-build-debug/CMakeFiles 0
+.PHONY : Lab\ 4/CMakeFiles/Lab4.dir/rule
+
+# Convenience name for target.
+Lab4: Lab\ 4/CMakeFiles/Lab4.dir/rule
+.PHONY : Lab4
+
+# codegen rule for target.
+Lab\ 4/CMakeFiles/Lab4.dir/codegen:
+	$(MAKE) $(MAKESILENT) -f "Lab 4/CMakeFiles/Lab4.dir/build.make" "Lab 4/CMakeFiles/Lab4.dir/codegen"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/mylaptop/Documents/GitHub/UMKC-Lab-Assignments/cmake-build-debug/CMakeFiles --progress-num=12,13 "Finished codegen for target Lab4"
+.PHONY : Lab\ 4/CMakeFiles/Lab4.dir/codegen
+
+# clean rule for target.
+Lab\ 4/CMakeFiles/Lab4.dir/clean:
+	$(MAKE) $(MAKESILENT) -f "Lab 4/CMakeFiles/Lab4.dir/build.make" "Lab 4/CMakeFiles/Lab4.dir/clean"
+.PHONY : Lab\ 4/CMakeFiles/Lab4.dir/clean
+
+#=============================================================================
 # Target rules for target Midterm/CMakeFiles/Midterm.dir
 
 # All Build rule for target.
 Midterm/CMakeFiles/Midterm.dir/all:
 	$(MAKE) $(MAKESILENT) -f Midterm/CMakeFiles/Midterm.dir/build.make Midterm/CMakeFiles/Midterm.dir/depend
 	$(MAKE) $(MAKESILENT) -f Midterm/CMakeFiles/Midterm.dir/build.make Midterm/CMakeFiles/Midterm.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/mylaptop/Documents/GitHub/UMKC-Lab-Assignments/cmake-build-debug/CMakeFiles --progress-num=12,13 "Built target Midterm"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/mylaptop/Documents/GitHub/UMKC-Lab-Assignments/cmake-build-debug/CMakeFiles --progress-num=14,15 "Built target Midterm"
 .PHONY : Midterm/CMakeFiles/Midterm.dir/all
 
 # Build rule for subdir invocation for target.
@@ -341,7 +396,7 @@ Midterm: Midterm/CMakeFiles/Midterm.dir/rule
 # codegen rule for target.
 Midterm/CMakeFiles/Midterm.dir/codegen:
 	$(MAKE) $(MAKESILENT) -f Midterm/CMakeFiles/Midterm.dir/build.make Midterm/CMakeFiles/Midterm.dir/codegen
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/mylaptop/Documents/GitHub/UMKC-Lab-Assignments/cmake-build-debug/CMakeFiles --progress-num=12,13 "Finished codegen for target Midterm"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/mylaptop/Documents/GitHub/UMKC-Lab-Assignments/cmake-build-debug/CMakeFiles --progress-num=14,15 "Finished codegen for target Midterm"
 .PHONY : Midterm/CMakeFiles/Midterm.dir/codegen
 
 # clean rule for target.
