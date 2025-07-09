@@ -88,7 +88,7 @@ string baseSystemConvert(string numStr, int initialBase, int finalBase)
         //digits.push_back(remainder);
     }
 
-    if (num == 0)
+    if (numStr == "0")
     {
         return "0";
     }
