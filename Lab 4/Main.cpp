@@ -88,6 +88,11 @@ string baseSystemConvert(string numStr, int initialBase, int finalBase)
         //digits.push_back(remainder);
     }
 
+    if (num == 0)
+    {
+        return "0";
+    }
+
     return convertedNum;
 }
 
