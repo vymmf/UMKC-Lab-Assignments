@@ -42,6 +42,8 @@ set(CMAKE_MAKEFILE_DEPENDS
   "/Users/mylaptop/Documents/GitHub/UMKC-Lab-Assignments/Lab 2/CMakeLists.txt"
   "/Users/mylaptop/Documents/GitHub/UMKC-Lab-Assignments/Lab 3/CMakeLists.txt"
   "/Users/mylaptop/Documents/GitHub/UMKC-Lab-Assignments/Lab 4/CMakeLists.txt"
+  "/Users/mylaptop/Documents/GitHub/UMKC-Lab-Assignments/Lab 5/CMakeLists.txt"
+  "/Users/mylaptop/Documents/GitHub/UMKC-Lab-Assignments/Lab 6/CMakeLists.txt"
   "/Users/mylaptop/Documents/GitHub/UMKC-Lab-Assignments/Midterm/CMakeLists.txt"
   "CMakeFiles/3.31.6/CMakeCCompiler.cmake"
   "CMakeFiles/3.31.6/CMakeCXXCompiler.cmake"
@@ -62,6 +64,8 @@ set(CMAKE_MAKEFILE_PRODUCTS
   "Lab 2/CMakeFiles/CMakeDirectoryInformation.cmake"
   "Lab 3/CMakeFiles/CMakeDirectoryInformation.cmake"
   "Lab 4/CMakeFiles/CMakeDirectoryInformation.cmake"
+  "Lab 5/CMakeFiles/CMakeDirectoryInformation.cmake"
+  "Lab 6/CMakeFiles/CMakeDirectoryInformation.cmake"
   "Midterm/CMakeFiles/CMakeDirectoryInformation.cmake"
   )
 
@@ -72,5 +76,7 @@ set(CMAKE_DEPEND_INFO_FILES
   "Lab 2/CMakeFiles/Lab2.dir/DependInfo.cmake"
   "Lab 3/CMakeFiles/Lab3.dir/DependInfo.cmake"
   "Lab 4/CMakeFiles/Lab4.dir/DependInfo.cmake"
+  "Lab 5/CMakeFiles/Lab5.dir/DependInfo.cmake"
+  "Lab 6/CMakeFiles/Lab6.dir/DependInfo.cmake"
   "Midterm/CMakeFiles/Midterm.dir/DependInfo.cmake"
   )

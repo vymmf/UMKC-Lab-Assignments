@@ -2,7 +2,7 @@
 	"artifacts" : 
 	[
 		{
-			"path" : "Lab 0/Lab0"
+			"path" : "Lab 2/Lab2"
 		}
 	],
 	"backtrace" : 1,
@@ -14,7 +14,7 @@
 		],
 		"files" : 
 		[
-			"Lab 0/CMakeLists.txt"
+			"Lab 2/CMakeLists.txt"
 		],
 		"nodes" : 
 		[
@@ -35,7 +35,7 @@
 			"compileCommandFragments" : 
 			[
 				{
-					"fragment" : "-g -std=gnu++17 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk -fcolor-diagnostics"
+					"fragment" : "-g -std=gnu++17 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk -fcolor-diagnostics"
 				}
 			],
 			"language" : "CXX",
@@ -53,7 +53,7 @@
 			]
 		}
 	],
-	"id" : "Lab0::@6977fcffdf91504bfe00",
+	"id" : "Lab2::@7e52120c1b2ee8a17e09",
 	"link" : 
 	{
 		"commandFragments" : 
@@ -69,12 +69,12 @@
 		],
 		"language" : "CXX"
 	},
-	"name" : "Lab0",
-	"nameOnDisk" : "Lab0",
+	"name" : "Lab2",
+	"nameOnDisk" : "Lab2",
 	"paths" : 
 	{
-		"build" : "Lab 0",
-		"source" : "Lab 0"
+		"build" : "Lab 2",
+		"source" : "Lab 2"
 	},
 	"sourceGroups" : 
 	[
@@ -91,7 +91,7 @@
 		{
 			"backtrace" : 1,
 			"compileGroupIndex" : 0,
-			"path" : "Lab 0/Main.cpp",
+			"path" : "Lab 2/Main.cpp",
 			"sourceGroupIndex" : 0
 		}
 	],

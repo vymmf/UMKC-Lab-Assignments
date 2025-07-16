@@ -707,7 +707,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "7"
+			"value" : "9"
 		},
 		{
 			"name" : "CMAKE_OBJCOPY",
@@ -775,7 +775,7 @@
 				}
 			],
 			"type" : "PATH",
-			"value" : "/Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk"
+			"value" : "/Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk"
 		},
 		{
 			"name" : "CMAKE_PLATFORM_INFO_INITIALIZED",
@@ -1302,7 +1302,7 @@
 			"value" : "/Users/mylaptop/Documents/GitHub/UMKC-Lab-Assignments/Lab 4"
 		},
 		{
-			"name" : "Lab0_BINARY_DIR",
+			"name" : "Lab 5_BINARY_DIR",
 			"properties" : 
 			[
 				{
@@ -1311,10 +1311,10 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "/Users/mylaptop/Documents/GitHub/UMKC-Lab-Assignments/cmake-build-debug"
+			"value" : "/Users/mylaptop/Documents/GitHub/UMKC-Lab-Assignments/cmake-build-debug/Lab 5"
 		},
 		{
-			"name" : "Lab0_IS_TOP_LEVEL",
+			"name" : "Lab 5_IS_TOP_LEVEL",
 			"properties" : 
 			[
 				{
@@ -1323,10 +1323,10 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "ON"
+			"value" : "OFF"
 		},
 		{
-			"name" : "Lab0_SOURCE_DIR",
+			"name" : "Lab 5_SOURCE_DIR",
 			"properties" : 
 			[
 				{
@@ -1335,7 +1335,43 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "/Users/mylaptop/Documents/GitHub/UMKC-Lab-Assignments"
+			"value" : "/Users/mylaptop/Documents/GitHub/UMKC-Lab-Assignments/Lab 5"
+		},
+		{
+			"name" : "Lab 6_BINARY_DIR",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : "Value Computed by CMake"
+				}
+			],
+			"type" : "STATIC",
+			"value" : "/Users/mylaptop/Documents/GitHub/UMKC-Lab-Assignments/cmake-build-debug/Lab 6"
+		},
+		{
+			"name" : "Lab 6_IS_TOP_LEVEL",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : "Value Computed by CMake"
+				}
+			],
+			"type" : "STATIC",
+			"value" : "OFF"
+		},
+		{
+			"name" : "Lab 6_SOURCE_DIR",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : "Value Computed by CMake"
+				}
+			],
+			"type" : "STATIC",
+			"value" : "/Users/mylaptop/Documents/GitHub/UMKC-Lab-Assignments/Lab 6"
 		},
 		{
 			"name" : "Midterm_BINARY_DIR",

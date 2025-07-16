@@ -1,3 +1,9 @@
+// Name: Vincent Yang
+// Program 4 - Game Collection
+/* Purpose:
+Entertain user with various games.
+*/
+
 #include "Games.h"
 #include "Functions.h"
 

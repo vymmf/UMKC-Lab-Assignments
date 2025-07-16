@@ -182,6 +182,32 @@ Lab4/fast:
 .PHONY : Lab4/fast
 
 #=============================================================================
+# Target rules for targets named Lab5
+
+# Build rule for target.
+Lab5: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Lab5
+.PHONY : Lab5
+
+# fast build rule for target.
+Lab5/fast:
+	$(MAKE) $(MAKESILENT) -f "Lab 5/CMakeFiles/Lab5.dir/build.make" "Lab 5/CMakeFiles/Lab5.dir/build"
+.PHONY : Lab5/fast
+
+#=============================================================================
+# Target rules for targets named Lab6
+
+# Build rule for target.
+Lab6: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Lab6
+.PHONY : Lab6
+
+# fast build rule for target.
+Lab6/fast:
+	$(MAKE) $(MAKESILENT) -f "Lab 6/CMakeFiles/Lab6.dir/build.make" "Lab 6/CMakeFiles/Lab6.dir/build"
+.PHONY : Lab6/fast
+
+#=============================================================================
 # Target rules for targets named Midterm
 
 # Build rule for target.
@@ -207,6 +233,8 @@ help:
 	@echo "... Lab2"
 	@echo "... Lab3"
 	@echo "... Lab4"
+	@echo "... Lab5"
+	@echo "... Lab6"
 	@echo "... Midterm"
 .PHONY : help
 

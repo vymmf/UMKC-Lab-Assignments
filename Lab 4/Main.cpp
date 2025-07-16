@@ -1,3 +1,9 @@
+// Name: Vincent Yang
+// Program 5 - Calculator & Base Converter
+/* Purpose:
+Calculate the user's input and convert numbers from one base to another.
+*/
+
 #include <iostream>
 #include <iomanip>
 #include <algorithm>

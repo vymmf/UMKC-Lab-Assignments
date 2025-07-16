@@ -2,7 +2,7 @@
 	"artifacts" : 
 	[
 		{
-			"path" : "Lab 4/Lab4"
+			"path" : "Midterm/Midterm"
 		}
 	],
 	"backtrace" : 1,
@@ -14,7 +14,7 @@
 		],
 		"files" : 
 		[
-			"Lab 4/CMakeLists.txt"
+			"Midterm/CMakeLists.txt"
 		],
 		"nodes" : 
 		[
@@ -35,7 +35,7 @@
 			"compileCommandFragments" : 
 			[
 				{
-					"fragment" : "-g -std=gnu++17 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk -fcolor-diagnostics"
+					"fragment" : "-g -std=gnu++17 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk -fcolor-diagnostics"
 				}
 			],
 			"language" : "CXX",
@@ -53,7 +53,7 @@
 			]
 		}
 	],
-	"id" : "Lab4::@e7fd98ce82418ebd1d52",
+	"id" : "Midterm::@ee572f93845a9ed1fb27",
 	"link" : 
 	{
 		"commandFragments" : 
@@ -69,12 +69,12 @@
 		],
 		"language" : "CXX"
 	},
-	"name" : "Lab4",
-	"nameOnDisk" : "Lab4",
+	"name" : "Midterm",
+	"nameOnDisk" : "Midterm",
 	"paths" : 
 	{
-		"build" : "Lab 4",
-		"source" : "Lab 4"
+		"build" : "Midterm",
+		"source" : "Midterm"
 	},
 	"sourceGroups" : 
 	[
@@ -91,7 +91,7 @@
 		{
 			"backtrace" : 1,
 			"compileGroupIndex" : 0,
-			"path" : "Lab 4/Main.cpp",
+			"path" : "Midterm/Main.cpp",
 			"sourceGroupIndex" : 0
 		}
 	],

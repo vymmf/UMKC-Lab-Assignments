@@ -137,7 +137,7 @@ CMAKE_OSX_DEPLOYMENT_TARGET:STRING=
 
 //The product will be built against the headers and libraries located
 // inside the indicated SDK.
-CMAKE_OSX_SYSROOT:PATH=/Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk
+CMAKE_OSX_SYSROOT:PATH=/Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk
 
 //Value Computed by CMake
 CMAKE_PROJECT_DESCRIPTION:STATIC=
@@ -259,13 +259,22 @@ Lab 4_IS_TOP_LEVEL:STATIC=OFF
 Lab 4_SOURCE_DIR:STATIC=/Users/mylaptop/Documents/GitHub/UMKC-Lab-Assignments/Lab 4
 
 //Value Computed by CMake
-Lab0_BINARY_DIR:STATIC=/Users/mylaptop/Documents/GitHub/UMKC-Lab-Assignments/cmake-build-debug
+Lab 5_BINARY_DIR:STATIC=/Users/mylaptop/Documents/GitHub/UMKC-Lab-Assignments/cmake-build-debug/Lab 5
 
 //Value Computed by CMake
-Lab0_IS_TOP_LEVEL:STATIC=ON
+Lab 5_IS_TOP_LEVEL:STATIC=OFF
 
 //Value Computed by CMake
-Lab0_SOURCE_DIR:STATIC=/Users/mylaptop/Documents/GitHub/UMKC-Lab-Assignments
+Lab 5_SOURCE_DIR:STATIC=/Users/mylaptop/Documents/GitHub/UMKC-Lab-Assignments/Lab 5
+
+//Value Computed by CMake
+Lab 6_BINARY_DIR:STATIC=/Users/mylaptop/Documents/GitHub/UMKC-Lab-Assignments/cmake-build-debug/Lab 6
+
+//Value Computed by CMake
+Lab 6_IS_TOP_LEVEL:STATIC=OFF
+
+//Value Computed by CMake
+Lab 6_SOURCE_DIR:STATIC=/Users/mylaptop/Documents/GitHub/UMKC-Lab-Assignments/Lab 6
 
 //Value Computed by CMake
 Midterm_BINARY_DIR:STATIC=/Users/mylaptop/Documents/GitHub/UMKC-Lab-Assignments/cmake-build-debug/Midterm
@@ -380,7 +389,7 @@ CMAKE_MODULE_LINKER_FLAGS_RELWITHDEBINFO-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_NM
 CMAKE_NM-ADVANCED:INTERNAL=1
 //number of local generators
-CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=7
+CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=9
 //ADVANCED property for variable: CMAKE_OBJCOPY
 CMAKE_OBJCOPY-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_OBJDUMP

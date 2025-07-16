@@ -13,7 +13,9 @@
 						3,
 						4,
 						5,
-						6
+						6,
+						7,
+						8
 					],
 					"jsonFile" : "directory-.-Debug-f5ebdc15457944623624.json",
 					"minimumCMakeVersion" : 
@@ -99,6 +101,36 @@
 					]
 				},
 				{
+					"build" : "Lab 5",
+					"jsonFile" : "directory-Lab 5-Debug-84299c0d7fe36d8788ba.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.25"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 6,
+					"source" : "Lab 5",
+					"targetIndexes" : 
+					[
+						5
+					]
+				},
+				{
+					"build" : "Lab 6",
+					"jsonFile" : "directory-Lab 6-Debug-f6c8f873f3538c4118c3.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.25"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 7,
+					"source" : "Lab 6",
+					"targetIndexes" : 
+					[
+						6
+					]
+				},
+				{
 					"build" : "Midterm",
 					"jsonFile" : "directory-Midterm-Debug-6c6d7d208884c453086d.json",
 					"minimumCMakeVersion" : 
@@ -106,11 +138,11 @@
 						"string" : "3.25"
 					},
 					"parentIndex" : 0,
-					"projectIndex" : 6,
+					"projectIndex" : 8,
 					"source" : "Midterm",
 					"targetIndexes" : 
 					[
-						5
+						7
 					]
 				}
 			],
@@ -125,7 +157,9 @@
 						3,
 						4,
 						5,
-						6
+						6,
+						7,
+						8
 					],
 					"directoryIndexes" : 
 					[
@@ -198,11 +232,35 @@
 					[
 						6
 					],
-					"name" : "Midterm",
+					"name" : "Lab 5",
 					"parentIndex" : 0,
 					"targetIndexes" : 
 					[
 						5
+					]
+				},
+				{
+					"directoryIndexes" : 
+					[
+						7
+					],
+					"name" : "Lab 6",
+					"parentIndex" : 0,
+					"targetIndexes" : 
+					[
+						6
+					]
+				},
+				{
+					"directoryIndexes" : 
+					[
+						8
+					],
+					"name" : "Midterm",
+					"parentIndex" : 0,
+					"targetIndexes" : 
+					[
+						7
 					]
 				}
 			],
@@ -211,44 +269,58 @@
 				{
 					"directoryIndex" : 1,
 					"id" : "Lab0::@6977fcffdf91504bfe00",
-					"jsonFile" : "target-Lab0-Debug-caa84e1220e58b9dd9f3.json",
+					"jsonFile" : "target-Lab0-Debug-81e100ff2b28361d9a48.json",
 					"name" : "Lab0",
 					"projectIndex" : 1
 				},
 				{
 					"directoryIndex" : 2,
 					"id" : "Lab1::@afff14fd1f3f7dcfd003",
-					"jsonFile" : "target-Lab1-Debug-7a032bc2b1167062a07a.json",
+					"jsonFile" : "target-Lab1-Debug-449439be891196aa30b1.json",
 					"name" : "Lab1",
 					"projectIndex" : 2
 				},
 				{
 					"directoryIndex" : 3,
 					"id" : "Lab2::@7e52120c1b2ee8a17e09",
-					"jsonFile" : "target-Lab2-Debug-3b7f7868b8c510aaebae.json",
+					"jsonFile" : "target-Lab2-Debug-f196c56ce91d0af15eaa.json",
 					"name" : "Lab2",
 					"projectIndex" : 3
 				},
 				{
 					"directoryIndex" : 4,
 					"id" : "Lab3::@26ea3748468dff1f59f6",
-					"jsonFile" : "target-Lab3-Debug-29cdd115b11bb9038bfd.json",
+					"jsonFile" : "target-Lab3-Debug-e25692af98a26dbe75e8.json",
 					"name" : "Lab3",
 					"projectIndex" : 4
 				},
 				{
 					"directoryIndex" : 5,
 					"id" : "Lab4::@e7fd98ce82418ebd1d52",
-					"jsonFile" : "target-Lab4-Debug-d1ff579d64577c9ba521.json",
+					"jsonFile" : "target-Lab4-Debug-f2ec9f34ce2896bd7a2a.json",
 					"name" : "Lab4",
 					"projectIndex" : 5
 				},
 				{
 					"directoryIndex" : 6,
-					"id" : "Midterm::@ee572f93845a9ed1fb27",
-					"jsonFile" : "target-Midterm-Debug-c52144fc32b1805ed7af.json",
-					"name" : "Midterm",
+					"id" : "Lab5::@362fc7433b2ebd6b59fe",
+					"jsonFile" : "target-Lab5-Debug-f6bc73a328f42e832fdc.json",
+					"name" : "Lab5",
 					"projectIndex" : 6
+				},
+				{
+					"directoryIndex" : 7,
+					"id" : "Lab6::@b541101fd1d7e13a895c",
+					"jsonFile" : "target-Lab6-Debug-b8dd4d0c60057ffe3daa.json",
+					"name" : "Lab6",
+					"projectIndex" : 7
+				},
+				{
+					"directoryIndex" : 8,
+					"id" : "Midterm::@ee572f93845a9ed1fb27",
+					"jsonFile" : "target-Midterm-Debug-914b6daaacb86791cfa1.json",
+					"name" : "Midterm",
+					"projectIndex" : 8
 				}
 			]
 		}
