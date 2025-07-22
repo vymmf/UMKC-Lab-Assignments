@@ -219,6 +219,9 @@
 		},
 		{
 			"path" : "Midterm/CMakeLists.txt"
+		},
+		{
+			"path" : "Final/CMakeLists.txt"
 		}
 	],
 	"kind" : "cmakeFiles",

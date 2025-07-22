@@ -707,7 +707,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "9"
+			"value" : "10"
 		},
 		{
 			"name" : "CMAKE_OBJCOPY",
@@ -1120,6 +1120,42 @@
 			],
 			"type" : "BOOL",
 			"value" : "FALSE"
+		},
+		{
+			"name" : "Final_BINARY_DIR",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : "Value Computed by CMake"
+				}
+			],
+			"type" : "STATIC",
+			"value" : "/Users/mylaptop/Documents/GitHub/UMKC-Lab-Assignments/cmake-build-debug/Final"
+		},
+		{
+			"name" : "Final_IS_TOP_LEVEL",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : "Value Computed by CMake"
+				}
+			],
+			"type" : "STATIC",
+			"value" : "OFF"
+		},
+		{
+			"name" : "Final_SOURCE_DIR",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : "Value Computed by CMake"
+				}
+			],
+			"type" : "STATIC",
+			"value" : "/Users/mylaptop/Documents/GitHub/UMKC-Lab-Assignments/Final"
 		},
 		{
 			"name" : "Lab 0_BINARY_DIR",

@@ -24,3 +24,6 @@
 /Users/mylaptop/Documents/GitHub/UMKC-Lab-Assignments/cmake-build-debug/Midterm/CMakeFiles/Midterm.dir
 /Users/mylaptop/Documents/GitHub/UMKC-Lab-Assignments/cmake-build-debug/Midterm/CMakeFiles/edit_cache.dir
 /Users/mylaptop/Documents/GitHub/UMKC-Lab-Assignments/cmake-build-debug/Midterm/CMakeFiles/rebuild_cache.dir
+/Users/mylaptop/Documents/GitHub/UMKC-Lab-Assignments/cmake-build-debug/Final/CMakeFiles/Final.dir
+/Users/mylaptop/Documents/GitHub/UMKC-Lab-Assignments/cmake-build-debug/Final/CMakeFiles/edit_cache.dir
+/Users/mylaptop/Documents/GitHub/UMKC-Lab-Assignments/cmake-build-debug/Final/CMakeFiles/rebuild_cache.dir

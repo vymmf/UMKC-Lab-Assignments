@@ -220,6 +220,19 @@ Midterm/fast:
 	$(MAKE) $(MAKESILENT) -f Midterm/CMakeFiles/Midterm.dir/build.make Midterm/CMakeFiles/Midterm.dir/build
 .PHONY : Midterm/fast
 
+#=============================================================================
+# Target rules for targets named Final
+
+# Build rule for target.
+Final: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Final
+.PHONY : Final
+
+# fast build rule for target.
+Final/fast:
+	$(MAKE) $(MAKESILENT) -f Final/CMakeFiles/Final.dir/build.make Final/CMakeFiles/Final.dir/build
+.PHONY : Final/fast
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -228,6 +241,7 @@ help:
 	@echo "... depend"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
+	@echo "... Final"
 	@echo "... Lab0"
 	@echo "... Lab1"
 	@echo "... Lab2"
