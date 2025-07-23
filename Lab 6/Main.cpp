@@ -29,8 +29,8 @@ void generateRandomArray(int arr[], int len, int minVal = 1, int maxVal = 100000
     }
 }
 
-void copyArray(int source[], int destination[], int n) {
-    for (int i = 0; i < n; ++i) {
+void copyArray(int source[], int destination[], int len) {
+    for (int i = 0; i < len; ++i) {
         destination[i] = source[i];
     }
 }
