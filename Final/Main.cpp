@@ -1,7 +1,7 @@
 // Name: Vincent Yang
 // Final Program
 /* Purpose:
-
+Grading students quiz scores using pointers.
 */
 
 #include <iostream>
@@ -13,24 +13,33 @@
 using namespace std;
 
 int main() {
+    // Creates pointers for an input file (stream) and an output file (stream) // streams being where data is passed through, similar to cout displaying data/info using the console and cin getting user input
     auto* inputFilePtr = new ifstream("quiz_data.txt");
     auto* outputFilePtr = new ofstream("quiz_results.txt");
+
+    // Attempts to open the input file, if it fails an error message is shown and the pointer is deleted (saves memory), also makes process finish with exit code 1
     if (!inputFilePtr->is_open()) {
         cerr << "Error: Could not open quiz_data.txt" << endl;
         delete inputFilePtr;
         return 1;
     }
 
+    // Attempts to open the output file, if it fails an error message is shown and the pointer is deleted (saves memory), also makes process finish with exit code 1
     if (!outputFilePtr->is_open()) {
         cerr << "Error: Could not open quiz_results.txt" << endl;
         delete outputFilePtr;
         return 1;
     }
 
+    // Creates a pointer for a string (memory allocation to a slot where only string values should be stored)
     auto* correctAnswersPtr = new string();
+
+    // getline function which has the parameters of what file it wants to get a line/data/text from, and where to store that line/data/text to. Since this is the first instance of getting a line, it will only get the first line.
+    // this also checks if it is able to read and get the line from the file it wants to read from, and if it can't then it'll display an error message.
     if (getline(*inputFilePtr, *correctAnswersPtr)) {
     }
     else {
+        // closes the file and deletes the pointer for the file/file stream. also deletes the string pointer for the correctAnswers (Which should be ABCDE if things go correctly)
         cerr << "Error: Could not read correct answers from student.txt" << endl;
         inputFilePtr->close();
         delete inputFilePtr;
@@ -38,86 +47,53 @@ int main() {
         return 1;
     }
 
+    // Fancy text formatting to make the grading report look nice
+    // setw() sets the width based on the integer that is passed in
+    // left sets the alignment of the string/text
+    // *outputFilePtr is passed through instead of cout because we are writing to the quiz_results.txt file, not to the console display
     *outputFilePtr << "Quiz Grading Report:\n";
-    *outputFilePtr << "--------------------\n";
+    *outputFilePtr << "------------------------\n";
     *outputFilePtr << left << setw(15) << "Student ID"
-         << left << setw(10) << "Score"
-         << left << setw(10) << "Percentage"
-         << left << "Grade" << endl;
-    cout << "----------------------------\n";
-    string* linePtr = new string();
-    string* studentIdStrPtr = new string();
-    string* studentAnswersPtr = new string();
+         << left << setw(10) << "Correct" << endl;
+    *outputFilePtr << "------------------------\n";
+    // Creates 3 new string pointers, which will be used to get the current line, the student's id, and the answers the student got
+    auto* linePtr = new string();
+    auto* studentIdStrPtr = new string();
+    auto* studentAnswersPtr = new string();
+    // This while loop attempts to get the next line in the file and puts it in the line string pointer, which will be used to read the student's id and answers
     while (getline(*inputFilePtr, *linePtr)) {
-// Find the first space to separate ID and answers
+// Finds the first space in the line, which will the divider between the student id and their answers. (spacePos is the position of the space)
         size_t spacePos = linePtr->find(' ');
+        // If a space is found within the line (thus there is no position aka npos) then it creates a substring where the student id is from index 0 to the index position of the space, and then anything after the space is the student's answers
         if (spacePos != string::npos) {
             *studentIdStrPtr = linePtr->substr(0, spacePos);
-// Get answers, handling potential leading spaces before answers
             *studentAnswersPtr = linePtr->substr(spacePos + 1);
-            trimWhitespace(studentAnswersPtr); // Trim leading whitespace from answers
         }
-        else {
-// If no space, assume the whole line is potentially an ID or malformed
-            *studentIdStrPtr = *linePtr;
-            studentAnswersPtr->clear(); // No answers provided if no space
-        }
-// Trim any leading/trailing whitespace from studentIdStr
-        trimWhitespace(studentIdStrPtr);
-// Pass the address of the string to isNumeric
-        if (!isNumeric(studentIdStrPtr) || studentIdStrPtr->empty()) {
-            *errorFilePtr << "Rejected Record: Invalid Student ID '" <<
-                          *studentIdStrPtr << "' in line: " << *linePtr << endl;
-            continue; // Skip to the next line
-        }
-        int score = 0;
-// Iterate using pointers to characters for comparison (optional but demonstrates pointer usage)
+
+        int correct = 0;
+// Creates pointers for the characters in the string pointers for student answers and correct answers
         const char* studentAnsChar = studentAnswersPtr->c_str();
         const char* correctAnsChar = correctAnswersPtr->c_str();
-        for (int i = 0; i < 20; ++i) {
-            if (i < studentAnswersPtr->length() && i < correctAnswersPtr->length())
-            {
+        // loops 5 times because there are only 5 multiple choice questions/answers to be checked for each student
+        for (int i = 0; i < 5; ++i) {
                 if (*(studentAnsChar + i) == *(correctAnsChar + i)) {
-                    score += 2; // Correct answer
+                    correct += 1; // Correct answer
                 }
-                else if (*(studentAnsChar + i) != ' ') { // Incorrect (and not blank)
-                    score += 1; // Incorrect answer
-                }
-// If studentAnswers[i] is ' ', it's a blank, score remains 0 for that question
-            }
         }
-        double percentage = (static_cast<double>(score) / 40.0) * 100.0;
-        char grade;
-        if (percentage >= 90.0) {
-            grade = 'A';
-        }
-        else if (percentage >= 80.0) {
-            grade = 'B';
-        }
-        else if (percentage >= 70.0) {
-            grade = 'C';
-        }
-        else if (percentage >= 60.0) {
-            grade = 'D';
-        }
-        else {
-            grade = 'F';
-        }
-        cout << left << setw(15) << *studentIdStrPtr
-             << left << setw(10) << score
-             << left << setw(10) << fixed << setprecision(2) << percentage
-             << left << grade << endl;
+        // More fancy text formatting, this time it will write the student ids and their number of correct answers into the quiz_results.txt file
+        *outputFilePtr << left << setw(15) << *studentIdStrPtr
+             << left << setw(10) << correct << endl;
     }
-// Close and delete dynamically allocated file streams
+// Closes both input and output file streams using the data that the pointers are pointing to (in this case the file streams)
     inputFilePtr->close();
-    errorFilePtr->close();
+    outputFilePtr->close();
+    // Deletes all allocated memory slots for pointers that were used in the program
     delete inputFilePtr;
-    delete errorFilePtr;
-// Delete dynamically allocated strings
+    delete outputFilePtr;
     delete correctAnswersPtr;
     delete linePtr;
     delete studentIdStrPtr;
     delete studentAnswersPtr;
-    cout << "\nGrading complete. Invalid student IDs (if any) have been written to error.txt.\n";
+    cout << "\nGrading complete.\n";
     return 0;
 }
